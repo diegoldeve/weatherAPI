@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h2>Weather api</h2>
+    <h2 class="title">Weather api</h2>
+    <form action="">
+        <section class="inputs">
+            <label for="city">Enter a city:</label>
+            <input type="text" name="" id="city">
+            <label for="country">Enter a country:</label>
+            <select name="" id="country">
+                <option disabled selected value="">Choose</option>
+                <option value="AR">Argentina</option>
+                <option value="CO">Colombia</option>
+                <option value="CR">Costa Rica</option>
+                <option value="ES">España</option>
+                <option value="US">Estados Unidos</option>
+                <option value="MX">México</option>
+                <option value="PE">Perú</option>
+            </select>
+            <input type="submit" value="Search" id="search">
+            <div class="error">
+                <p class="mensaje">Ups.. hubo un error</p>
+            </div>
+        </section>
+    </form>
+    <script src="./script.js"></script>
 </body>
 </html>

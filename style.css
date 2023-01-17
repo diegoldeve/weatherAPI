@@ -1,0 +1,86 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: linear-gradient(to left, #fff, #ff3);
+	background-size: 200%;
+	animation: changing 3s ease-in infinite;
+	font-size: 62.5%;
+}
+@keyframes changing {
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 50% 100%;
+
+	}
+	100%{
+		background-position: 0% 50%;
+
+	}
+}
+.title{
+	text-align: center;
+	margin: 3rem;
+	font-size: 1.5rem;
+}
+form{
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	
+
+}
+.inputs{
+	display: flex; 
+	justify-content: center;
+	align-self: center;
+	flex-direction: column;
+	flex-wrap: wrap;	
+}
+input{
+	margin: 1vh;
+	height: 2.5rem;
+	width: 15rem;
+	padding: .5rem;
+}
+label{
+	font-size: 1.5rem;
+}
+#search{
+	width: 5rem;
+	margin: 1rem;
+	border-radius: .5rem;
+	border:none;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1.5px 3px, rgba(0, 0, 0, 0.23) 0px 1.5px 3px;
+}
+#search:hover{
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.error{
+	background-color: rgb(251, 67, 67);
+	width: 13rem;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mensaje{
+	font-size: 1.5rem;
+}
+
+
+
+
+
+
+@media screen and (min-width:320px) and (max-width:750px) {
+	input{
+		margin: 1.8vh;
+		height: 1.8rem;
+		width: 10rem;
+	}
+}
